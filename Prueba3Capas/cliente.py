@@ -8,7 +8,6 @@ from config import *
 if __name__ == "__main__":
 	op1=[False]
 	servicios={}
-	op = random.choice(['+', '*', '/'])
 	sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 	servicios["ss"]= sock
@@ -16,12 +15,14 @@ if __name__ == "__main__":
 	try:
 		servicios.get("ss").connect((serviservicio["serviservicio_IP"],serviservicio["serviservicio_Puerto"]))
 		op1=True
+		id = sock.recv(1024)
 		sock.sendall('cliente')
 
 	except:
 		print("No hay servidor")
 
 	while True:
+		op = random.choice(['+', '*', '-'])
 
 		if op[0]== '+':
 			print "Preparando operacion para suma"
@@ -29,7 +30,7 @@ if __name__ == "__main__":
 		elif op=='*':
 			print "Preparando operacion para multi"
 
-		elif op=='/':
+		elif op=='-':
 			print "Preparando operacion para div"
 		else:
 			print "Servidor no encontrado"
@@ -44,6 +45,6 @@ if __name__ == "__main__":
 
 			sock.sendall(message)
 
-			data = sock.recv(19)
+			data = sock.recv(1024)
 
 			print >>sys.stderr, 'recibiendo "%s"' % data
