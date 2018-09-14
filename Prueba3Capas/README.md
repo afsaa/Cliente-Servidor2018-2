@@ -2,11 +2,11 @@
 
 Pruebas y actividades utilizando el modelo de 3 capas de la arquitectura cliente/servidor. Además del despliegue y utilización del dns.
 
-## Getting Started
+## Para empezar
 
-Clona el respositorio en tu máquina local para empezar.
+Clona el respositorio en tu máquina local.
 
-### Prerequisites
+### Prerequisitos
 
 Es necesario tener instalada la versión 2.7 de Python. Para instalarlo se puede usar el siguiente comando en linux:
 
