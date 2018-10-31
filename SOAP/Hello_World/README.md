@@ -17,4 +17,4 @@ Para instalar spyne es necesario usar ```sudo easy_install spyne```
 Para ejecutar el código hay que usar ```python helloworld_service.py``` en una terminal.
 
 Ejecutar en otra terminal
-```curl 'http://localhost:8000/say_hello?name=World&times=5'\| python -m json.tool``` para recibir las respuestas del servidor.
+```curl "http://localhost:8000/say_hello?name=World&times=5"\| python -m json.tool``` para recibir las respuestas del servidor.
