@@ -10,11 +10,14 @@ Tener instalado pip previamente. En caso de que no se encuentre instalado usar e
 
 ## Instalación
 
-Para instalar spyne es necesario usar ```sudo easy_install spyne```
+Es necesario instalar los modulos Spyne y Suds.
+
+Para instalar Spyne es necesario usar ```sudo easy_install spyne```
+
+Para instalar Suds es necesario usar ```sudo easy_install suds-jurko```
 
 ## Ejecución
 
 Para ejecutar el código hay que usar ```python helloworld_service.py``` en una terminal.
 
-Ejecutar en otra terminal
-```curl "http://localhost:8000/say_hello?name=World&times=5"\| python -m json.tool``` para recibir las respuestas del servidor.
+Ejecutar en otra terminal ```python client-service.py```.
